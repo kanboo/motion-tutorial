@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import Motion01 from './components/motion-01.vue'
 import Motion02 from './components/motion-02.vue'
+import Motion03 from './components/motion-03.vue'
 const currentComponent = ref(null)
 
 const motionExamples = [
@@ -16,6 +17,12 @@ const motionExamples = [
     title: 'SVG 路徑動畫',
     description: '展示 SVG 路徑繪製動畫效果',
     component: Motion02
+  },
+  {
+    id: 'motion-03',
+    title: '球體彈跳動畫',
+    description: '展示球體的彈跳動畫效果',
+    component: Motion03
   },
 ]
 
