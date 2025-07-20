@@ -5,6 +5,7 @@ import Motion02 from './components/motion-02.vue'
 import Motion03 from './components/motion-03.vue'
 import Motion04 from './components/motion-04.vue'
 import Motion05 from './components/motion-05.vue'
+import Motion06 from './components/motion-06.vue'
 const currentComponent = ref(null)
 
 const motionExamples = [
@@ -37,6 +38,12 @@ const motionExamples = [
     title: '關鍵幀動畫',
     description: '展示關鍵幀動畫效果',
     component: Motion05
+  },
+  {
+    id: 'motion-06',
+    title: '懸停動畫',
+    description: '展示元素在懸停時的動畫效果',
+    component: Motion06
   },
 ]
 
