@@ -3,6 +3,7 @@ import { ref } from 'vue'
 import Motion01 from './components/motion-01.vue'
 import Motion02 from './components/motion-02.vue'
 import Motion03 from './components/motion-03.vue'
+import Motion04 from './components/motion-04.vue'
 const currentComponent = ref(null)
 
 const motionExamples = [
@@ -23,6 +24,12 @@ const motionExamples = [
     title: '球體彈跳動畫',
     description: '展示球體的彈跳動畫效果',
     component: Motion03
+  },
+  {
+    id: 'motion-04',
+    title: '進出場動畫',
+    description: '展示元素的進出場動畫效果',
+    component: Motion04
   },
 ]
 
