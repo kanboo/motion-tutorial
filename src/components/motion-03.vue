@@ -1,6 +1,6 @@
 <script setup>
 // ref: https://motion.dev/docs/vue-animation#enter-animations
-import { motion } from 'motion-v'
+import { motion } from 'motion-v';
 </script>
 
 <template>
@@ -11,7 +11,8 @@ import { motion } from 'motion-v'
       duration: 0.4,
       scale: { type: 'spring', visualDuration: 0.8, bounce: 0.6 }
     }"
-    class="ball" />
+    class="ball"
+  />
 </template>
 
 <style>

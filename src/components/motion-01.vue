@@ -1,11 +1,11 @@
 <script setup>
 // ref: https://motion.dev/docs/vue-animation#basic-animations
-import { ref } from 'vue'
-import { motion } from 'motion-v'
+import { ref } from 'vue';
+import { motion } from 'motion-v';
 
-const x = ref(0)
-const y = ref(0)
-const rotate = ref(0)
+const x = ref(0);
+const y = ref(0);
+const rotate = ref(0);
 </script>
 
 <template>
@@ -25,13 +25,13 @@ const rotate = ref(0)
           type="range"
           :min="-200"
           :max="200"
-        />
+        >
         <input
-          type="number"
           v-model.number="x"
+          type="number"
           :min="-200"
           :max="200"
-        />
+        >
       </label>
       <label>
         <code>y</code>
@@ -40,13 +40,13 @@ const rotate = ref(0)
           type="range"
           :min="-200"
           :max="200"
-        />
+        >
         <input
-          type="number"
           v-model.number="y"
+          type="number"
           :min="-200"
           :max="200"
-        />
+        >
       </label>
       <label>
         <code>rotate</code>
@@ -55,13 +55,13 @@ const rotate = ref(0)
           type="range"
           :min="-180"
           :max="180"
-        />
+        >
         <input
-          type="number"
           v-model.number="rotate"
+          type="number"
           :min="-180"
           :max="180"
-        />
+        >
       </label>
     </div>
   </div>

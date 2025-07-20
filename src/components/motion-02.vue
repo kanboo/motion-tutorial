@@ -1,11 +1,11 @@
 <script setup lang="ts">
 // ref: https://motion.dev/docs/vue-animation#svg-line-drawing
-import { motion } from 'motion-v'
+import { motion } from 'motion-v';
 
 const draw = {
   hidden: { pathLength: 0, opacity: 0 },
   visible: (i) => {
-    const delay = i * 0.5
+    const delay = i * 0.5;
     return {
       pathLength: 1,
       opacity: 1,
@@ -13,9 +13,9 @@ const draw = {
         pathLength: { delay, type: "spring", duration: 1.5, bounce: 0 },
         opacity: { delay, duration: 0.01 },
       },
-    }
+    };
   },
-}
+};
 
 /**
  * ==============   Styles   ================
@@ -23,13 +23,13 @@ const draw = {
 
 const image = {
   maxWidth: "80vw",
-}
+};
 
 const shape = {
   strokeWidth: 10,
   strokeLinecap: "round",
   fill: "transparent",
-}
+};
 </script>
 
 <template>

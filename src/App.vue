@@ -1,14 +1,14 @@
 <script setup>
-import { ref } from 'vue'
-import Motion01 from './components/motion-01.vue'
-import Motion02 from './components/motion-02.vue'
-import Motion03 from './components/motion-03.vue'
-import Motion04 from './components/motion-04.vue'
-import Motion05 from './components/motion-05.vue'
-import Motion06 from './components/motion-06.vue'
-import Motion07 from './components/motion-07.vue'
+import { ref } from 'vue';
+import Motion01 from './components/motion-01.vue';
+import Motion02 from './components/motion-02.vue';
+import Motion03 from './components/motion-03.vue';
+import Motion04 from './components/motion-04.vue';
+import Motion05 from './components/motion-05.vue';
+import Motion06 from './components/motion-06.vue';
+import Motion07 from './components/motion-07.vue';
 
-const currentComponent = ref(null)
+const currentComponent = ref(null);
 
 const motionExamples = [
   {
@@ -53,28 +53,45 @@ const motionExamples = [
     description: '展示元素在懸停和按壓時的縮放效果',
     component: Motion07
   }
-]
+];
 
 const showExample = (example) => {
-  currentComponent.value = example
-}
+  currentComponent.value = example;
+};
 
 const backToHome = () => {
-  currentComponent.value = null
-}
+  currentComponent.value = null;
+};
 </script>
 
 <template>
   <div class="app">
     <!-- 主頁：案例清單 -->
-    <div v-if="!currentComponent" class="home">
+    <div
+      v-if="!currentComponent"
+      class="home"
+    >
       <header class="header">
         <div class="logos">
-          <a href="https://vite.dev" target="_blank">
-            <img src="/vite.svg" class="logo" alt="Vite logo" />
+          <a
+            href="https://vite.dev"
+            target="_blank"
+          >
+            <img
+              src="/vite.svg"
+              class="logo"
+              alt="Vite logo"
+            >
           </a>
-          <a href="https://vuejs.org/" target="_blank">
-            <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
+          <a
+            href="https://vuejs.org/"
+            target="_blank"
+          >
+            <img
+              src="./assets/vue.svg"
+              class="logo vue"
+              alt="Vue logo"
+            >
           </a>
         </div>
         <h1>Motion-V 案例展示</h1>
@@ -90,15 +107,23 @@ const backToHome = () => {
         >
           <h3>{{ example.title }}</h3>
           <p>{{ example.description }}</p>
-          <div class="view-btn">查看案例</div>
+          <div class="view-btn">
+            查看案例
+          </div>
         </div>
       </div>
     </div>
 
     <!-- 案例詳情頁 -->
-    <div v-else class="example-detail">
+    <div
+      v-else
+      class="example-detail"
+    >
       <header class="detail-header">
-        <button class="back-btn" @click="backToHome">
+        <button
+          class="back-btn"
+          @click="backToHome"
+        >
           ← 返回主頁
         </button>
         <h2>{{ currentComponent.title }}</h2>

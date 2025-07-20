@@ -1,8 +1,8 @@
 <script setup>
 // ref: https://motion.dev/docs/vue-animation#exit-animations
-import { ref } from 'vue'
-import { AnimatePresence, motion } from 'motion-v'
-const isVisible = ref(true)
+import { ref } from 'vue';
+import { AnimatePresence, motion } from 'motion-v';
+const isVisible = ref(true);
 </script>
 
 <template>
@@ -10,17 +10,17 @@ const isVisible = ref(true)
     <AnimatePresence :initial="false">
       <motion.div
         v-if="isVisible"
+        key="box"
         :initial="{ opacity: 0, scale: 0 }"
         :animate="{ opacity: 1, scale: 1 }"
         :exit="{ opacity: 0, scale: 0 }"
         class="box"
-        key="box"
       />
     </AnimatePresence>
     <motion.button
       class="button"
+      :while-press="{ y: 2 }"
       @click="isVisible = !isVisible"
-      :whilePress="{ y: 2 }"
     >
       {{ isVisible ? 'Hide' : 'Show' }}
     </motion.button>
