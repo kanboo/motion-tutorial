@@ -6,10 +6,14 @@
 import AnimatePresenceSync from './AnimatePresenceSync.vue';
 import AnimatePresenceWait from './AnimatePresenceWait.vue';
 import AnimatePresencePopLayout from './AnimatePresencePopLayout.vue';
+import NoAnimatePresenceDemo from './NoAnimatePresenceDemo.vue';
 </script>
 
 <template>
   <div class="container">
+    <!-- 未使用 AnimatePresence：元件消失時無退場動畫 -->
+    <NoAnimatePresenceDemo />
+
     <!-- mode="sync"：進場與退場動畫同時執行（預設）。 -->
     <AnimatePresenceSync />
 
