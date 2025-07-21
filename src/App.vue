@@ -8,6 +8,7 @@ import Motion05 from './components/motion-05.vue';
 import Motion06 from './components/motion-06.vue';
 import Motion07 from './components/motion-07.vue';
 import Motion08 from './components/motion-08.vue';
+import Motion09 from './components/motion-09.vue';
 
 const currentComponent = ref(null);
 
@@ -59,6 +60,12 @@ const motionExamples = [
     title: '逐字顯示文本',
     description: '逐字顯示文本',
     component: markRaw(Motion08)
+  },
+  {
+    id: 'motion-09',
+    title: '滾動進場動畫',
+    description: '使用 whileInView 配合 HeadlineMotion 的四大區塊滾動動畫效果',
+    component: markRaw(Motion09)
   }
 ];
 
