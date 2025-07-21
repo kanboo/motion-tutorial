@@ -9,6 +9,7 @@ import Motion06 from './components/motion-06.vue';
 import Motion07 from './components/motion-07.vue';
 import Motion08 from './components/motion-08.vue';
 import Motion09 from './components/motion-09.vue';
+import Motion10 from './components/motion-10.vue';
 
 const currentComponent = ref(null);
 
@@ -66,6 +67,12 @@ const motionExamples = [
     title: '滾動進場動畫',
     description: '使用 whileInView 配合 HeadlineMotion 的四大區塊滾動動畫效果',
     component: markRaw(Motion09)
+  },
+  {
+    id: 'motion-10',
+    title: '❌ staggerChildren 錯開動畫',
+    description: '展示如何使用 staggerChildren 讓多個子元素依序播放動畫',
+    component: markRaw(Motion10)
   }
 ];
 
