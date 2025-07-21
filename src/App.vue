@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue';
+import { ref, markRaw } from 'vue';
 import Motion01 from './components/motion-01.vue';
 import Motion02 from './components/motion-02.vue';
 import Motion03 from './components/motion-03.vue';
@@ -15,42 +15,43 @@ const motionExamples = [
     id: 'motion-01',
     title: '基本動畫控制',
     description: '使用滑桿控制元素的位置和旋轉',
-    component: Motion01
+    component: markRaw(Motion01)
   },
   {
     id: 'motion-02',
     title: 'SVG 路徑動畫',
     description: '展示 SVG 路徑繪製動畫效果',
-    component: Motion02
+    component: markRaw(Motion02)
   },
   {
     id: 'motion-03',
     title: '球體彈跳動畫',
     description: '展示球體的彈跳動畫效果',
-    component: Motion03
+    component: markRaw(Motion03)
   },
   {
     id: 'motion-04',
     title: '進出場動畫',
     description: '展示元素的進出場動畫效果',
-    component: Motion04
+    component: markRaw(Motion04)
   },
   {
     id: 'motion-05',
     title: '關鍵幀動畫',
     description: '展示關鍵幀動畫效果',
-    component: Motion05
+    component: markRaw(Motion05)
   },
   {
     id: 'motion-06',
     title: '懸停動畫',
     description: '展示元素在懸停時的動畫效果',
-    component: Motion06
+    component: markRaw(Motion06)
   },
   {
     id: 'motion-07',
     title: '縮放和按壓動畫',
     description: '展示元素在懸停和按壓時的縮放效果',
+    component: markRaw(Motion07)
     component: Motion07
   }
 ];
