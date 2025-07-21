@@ -7,6 +7,7 @@ import Motion04 from './components/motion-04.vue';
 import Motion05 from './components/motion-05.vue';
 import Motion06 from './components/motion-06.vue';
 import Motion07 from './components/motion-07.vue';
+import Motion08 from './components/motion-08.vue';
 
 const currentComponent = ref(null);
 
@@ -52,7 +53,12 @@ const motionExamples = [
     title: '縮放和按壓動畫',
     description: '展示元素在懸停和按壓時的縮放效果',
     component: markRaw(Motion07)
-    component: Motion07
+  },
+  {
+    id: 'motion-08',
+    title: '逐字顯示文本',
+    description: '逐字顯示文本',
+    component: markRaw(Motion08)
   }
 ];
 
