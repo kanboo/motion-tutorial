@@ -1,4 +1,3 @@
-````markdown
 # Vue 3 + Vite + Motion Tutorial
 
 本專案使用 Vite 建立 Vue3，並已安裝 motion-v 套件。
@@ -30,5 +29,3 @@
 - motion-v
 - tailwindcss
 - element-plus
-
-````
