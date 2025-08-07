@@ -10,69 +10,76 @@ import Motion07 from './components/motion-07.vue';
 import Motion08 from './components/motion-08.vue';
 import Motion09 from './components/motion-09.vue';
 import Motion10 from './components/motion-10.vue';
+import Motion11 from './components/motion-11.vue';
 
 const currentComponent = ref(null);
 
 const motionExamples = [
   {
     id: 'motion-01',
-    title: '基本動畫控制',
+    title: '01.基本動畫控制',
     description: '使用滑桿控制元素的位置和旋轉',
     component: markRaw(Motion01)
   },
   {
     id: 'motion-02',
-    title: 'SVG 路徑動畫',
+    title: '02.SVG 路徑動畫',
     description: '展示 SVG 路徑繪製動畫效果',
     component: markRaw(Motion02)
   },
   {
     id: 'motion-03',
-    title: '球體彈跳動畫',
+    title: '03.球體彈跳動畫',
     description: '展示球體的彈跳動畫效果',
     component: markRaw(Motion03)
   },
   {
     id: 'motion-04',
-    title: '進出場動畫',
+    title: '04.進出場動畫',
     description: '展示元素的進出場動畫效果',
     component: markRaw(Motion04)
   },
   {
     id: 'motion-05',
-    title: '關鍵幀動畫',
+    title: '05.關鍵幀動畫',
     description: '展示關鍵幀動畫效果',
     component: markRaw(Motion05)
   },
   {
     id: 'motion-06',
-    title: '懸停動畫',
+    title: '06.懸停動畫',
     description: '展示元素在懸停時的動畫效果',
     component: markRaw(Motion06)
   },
   {
     id: 'motion-07',
-    title: '縮放和按壓動畫',
+    title: '07.縮放和按壓動畫',
     description: '展示元素在懸停和按壓時的縮放效果',
     component: markRaw(Motion07)
   },
   {
     id: 'motion-08',
-    title: '逐字顯示文本',
+    title: '08.逐字顯示文本',
     description: '逐字顯示文本',
     component: markRaw(Motion08)
   },
   {
     id: 'motion-09',
-    title: '滾動進場動畫',
+    title: '09.滾動進場動畫',
     description: '使用 whileInView 配合 HeadlineMotion 的四大區塊滾動動畫效果',
     component: markRaw(Motion09)
   },
   {
     id: 'motion-10',
-    title: '❌ staggerChildren 錯開動畫',
+    title: '10.❌ staggerChildren 錯開動畫',
     description: '展示如何使用 staggerChildren 讓多個子元素依序播放動畫',
     component: markRaw(Motion10)
+  },
+  {
+    id: 'motion-11',
+    title: '11.✨ 星星特效',
+    description: '隨機生成星星與閃爍動畫效果',
+    component: markRaw(Motion11)
   }
 ];
 
